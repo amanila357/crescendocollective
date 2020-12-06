@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'Interstate-Bold';
+    src: url('fonts/Interstate/Interstate\ Bold/Interstate Bold.otf');
+}
+
+@font-face {
+    font-family: 'Helvetica-Light';
+    src: url('fonts/helvetica-light-opentype_bigfontsite.com.otf');
+}
+
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('fonts/Helvetica-Bold.otf');
+}
+
+body {
+    font: 15px Helvetica;
+    padding: 0;
+    margin: 0;
+    background-color: #ebebeb;
+}
+.container {
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+header {
+    background-color: white;
+    min-height: 70px;
+    border-bottom: #001254 22px solid;
+}
+
+header a{
+    font: 20px Helvetica;
+    text-decoration: none;
+    /* text-transform: uppercase; */    
+    color: black;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    float: left;
+    margin-right: 45px;
+    padding: 0 45px 0px 20px;
+}
+
+header #branding {
+    float: left;
+    font: 40pt Interstate-Bold;
+    color: #183987;   
+    margin-bottom: 15px;
+}
+
+header nav {
+    float: right;    
+    margin-top: 90px;
+}
+
+/* header .highlight, header .current a {
+    color: red;
+    font-weight: bold;
+} */
+
+header .highlight {
+    font-size: 15pt;
+    color: #0299fe;
+}
+
+header a:hover {
+    color: #0299fe;
+}
+
+#showcase {
+    min-height: 527px;
+    background: url('../img/mountain.png') -1410px -625px;
+    color: white;
+    margin-bottom: 1%;
+}
+
+#showcase #title {
+    font: 36pt/1.1 Helvetica-Bold;
+    font-weight: bolder;
+    padding-bottom: 14px;
+    margin-top: 126px;
+}
+
+#showcase #description {
+    font: 26pt/1.3 Helvetica-Light;
+    font-weight: lighter;
+}
+
+#insights button {
+    border: 0;
+    width: 416px;
+    height: 433px;
+    box-shadow: -3px -3px 15px 1px #ccc;
+    font: 24pt Helvetica-Bold;    
+    border-bottom: #1450d2 12px solid;
+    margin-bottom: 41px;
+}
+
+#insights {
+    margin-top: 43px;
+}
+
+ .box {
+    float: left;
+    text-align: left;
+    padding-right: 5%;
+}
+
+#insights #button1_desc {
+    color: #1450d2;
+    text-align: left;
+    margin: 15px 0 0 15px;
+}
+
+#insights #button2_desc {
+    color: #01a49c;
+    text-align: left;
+    margin: 15px 0 0 15px;
+}
+
+#insights #button3_desc {
+    color: #009bfa;
+    text-align: left;
+    margin: 15px 0 0 15px;
+}
+
+#insights .branding {
+    font-size: 25pt;
+}
+
+#insights .title {
+    margin-bottom: 26px;
+}
+
+#commitment {
+    min-height: 447px;
+    background: url('../img/fractal.png');
+    opacity: 0.98;
+    filter: brightness(130%);
+    color: white;
+    box-shadow: inset 0 5px 25px 1px #302f2f;
+    text-align: center;
+}
+
+#commitment .title {
+    margin-top: 100px;
+    font: 31pt/1.6 Helvetica-Bold;
+    opacity: 1;
+}
+
+#commitment .summary {
+    font: 18pt/1.4 Helvetica-Light;
+    font-weight: lighter;
+    opacity: 1; 
+}
+
+#commitment button {
+    border: 1;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;    
+    margin-top: 55px;
+    background: rgba(0, 151, 19, 0.0); 
+    color: white;
+    font: 13pt Helvetica;
+    font-weight: normal;
+    padding: 15px 60px 15px 60px;
+}
+
+#events {
+    margin-top: 38px;
+    margin-bottom: 99px;
+}
+
+aside {
+    width: 416px;
+    height: 322px;
+}
+
+aside#sidebox {
+    float: left;
+    margin-right: 3%;
+}
+
+.bluebox {
+    width: 416px;
+    height: 322px;
+    border: 0;
+    background-color: #1454d4;
+    text-align: left;
+}
+
+/* #events button {
+    width: 416px;
+    height: 322px;
+    border: 0;
+    background-color: #1454d4;
+    text-align: left;
+} */
+
+#events button {
+    border: 1;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    margin-left: 35px;
+    margin-top: 35px;
+    background-color: #1454d4;
+    color: white;
+    font: 13pt Interstate-Bold;
+    padding: 15px;
+}
+
+#events .button1 {
+    margin-top: 57px;
+}
+
+#events .title_box {
+    color: white;
+    font: 20pt Helvetica-Bold;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-top: 86px;
+}
+
+#events .summary_box {
+    color: white;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+#events .title {
+    font-size: 25pt;
+}
+
+#events .description {
+    margin-bottom: 60px;
+}
+
+footer {  
+    background-color: #747474;
+    color: white;
+}
+
+footer #contact {
+    float:left;
+    margin-bottom: 48px; 
+}
+
+footer #social_share {
+    float: right;
+    margin-top: 27px; 
+}
+
+footer #social_text {
+    float: left;
+    margin-right: 10px;
+}
+
+footer .links {
+    float: right;
+    margin-top: -2px;
+}
+
+footer img {
+    padding-right: 7px;
+}
+
+@media(max-width: 750px) {
+    /* body {
+        display: none;
+    } */
+
+    header #branding,
+    header nav,
+    header nav li{
+        float: none;
+        text-align: center;
+        width: 100%
+    }
+
+    header #branding, header .highlight {
+        margin-top: 30px;
+        font-size: 15px;
+        color: white;
+    }
+
+    header li {
+        color: white;
+    }
+
+    header {
+        padding-bottom: 3%;
+        background-color: #0299fe;
+        border: 0;
+        margin: 0;
+    }
+
+    header a{
+        color: white
+    }
+
+    header a:hover {
+        color: #001254;
+    }
+
+    #showcase {
+        text-align: center;        
+        background: none;
+        background-color: #0299fe;
+    }
+
+    #insights {
+        background-color: #001254;
+        margin: 0px;
+        color:white;
+    }
+
+    #insights .title {
+        margin-top: 20px;
+    }
+
+    #commitment .description {
+        margin-bottom: 50px;
+    }
+
+    #events .title {
+        color: #001254;
+    }
+
+    #events .summary {
+        color: gray;
+        font-size: 17px;
+    }
+
+    aside#sidebox {
+        float: left;
+        margin-bottom: 4%;
+    }
+
+
+}
