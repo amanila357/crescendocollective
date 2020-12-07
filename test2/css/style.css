@@ -21,7 +21,8 @@ body {
 }
 .container {
     width: 80%;
-    margin:auto;
+    /* margin:auto; */
+    margin: auto auto auto 12%;
     overflow:hidden;
 }
 
@@ -44,22 +45,60 @@ header ul {
 }
 
 header li {
-    display: inline;
+    display: block;
     float: left;
     margin-right: 45px;
     padding: 0 45px 0px 20px;
+}
+
+header #logo {
+    float: left;
+    margin-top: 15px;
+    margin-right: 30px; 
+}
+
+header #vline {
+    float: left;
+    border-left: 2px #cccccc solid;
+    height: 74px;
+    margin: 39px 0 0 5.5%;
 }
 
 header #branding {
     float: left;
     font: 40pt Interstate-Bold;
     color: #183987;   
-    margin-bottom: 15px;
+    margin-top: 5px;
 }
 
 header nav {
-    float: right;    
+    float: right; 
     margin-top: 90px;
+    margin-right: 5%;
+}
+
+header .navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle_nav {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 34px;
+}
+
+.toggle_nav .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #1a398a;
+    border-radius: 5px;
 }
 
 /* header .highlight, header .current a {
@@ -275,11 +314,28 @@ footer img {
     padding-right: 7px;
 }
 
-@media(max-width: 750px) {
-    /* body {
-        display: none;
-    } */
+#mobile_footer {
+    display: none;
+    text-align: center;
+    background-color: #747474;
+}
 
+#mobile_footer ul {
+    list-style-type: none;
+}
+
+#mobile_footer li {
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#mobile_footer button {
+    border: 0;
+    min-width:100%;
+    min-height: 60px;
+}
+
+@media(max-width: 800px) {
     header #branding,
     header nav,
     header nav li{
@@ -291,26 +347,55 @@ footer img {
     header #branding, header .highlight {
         margin-top: 30px;
         font-size: 15px;
-        color: white;
-    }
-
-    header li {
-        color: white;
+        color: #1a398a;
     }
 
     header {
         padding-bottom: 3%;
-        background-color: #0299fe;
         border: 0;
         margin: 0;
     }
 
     header a{
-        color: white
+        color: #1a398a;
     }
 
     header a:hover {
         color: #001254;
+    }
+
+    header .navlinks {
+        display: none;
+        align-items: center;
+        flex-direction: column;        
+    }
+
+    header .navlinks ul {
+        width: 100%;
+    }
+
+    header .navlinks.active {
+        display: flex;
+    }
+
+    header #vline {
+        display: none;
+    }
+
+    header #logo {
+        /* float: left; */
+        margin-top: 15px;
+        margin-right: 30px; 
+    }
+
+    .toggle_nav {
+        display: flex;
+    }    
+
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow:hidden;
     }
 
     #showcase {
@@ -347,5 +432,11 @@ footer img {
         margin-bottom: 4%;
     }
 
+    footer {
+        display: none;
+    }
 
+    #mobile_footer {
+        display: flex;
+    }
 }

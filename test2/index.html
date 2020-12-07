@@ -6,22 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACME Corporation | Research Professional Platform</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="container">
+            <div id="logo">
+                <img src="img/logo.png">
+            </div>            
             <div id="branding">
                 <span class="highlight">Research Professional</span><br> Platform
             </div>
+            <div id="vline"></div>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
+                <a href="#" class="toggle_nav">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navlinks">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -88,12 +100,6 @@
                 <div class="summary">This needs a great tagline, but I’ll fill it in later</div>
             </div>
 
-            <!-- <aside id="sidea">
-                <div class="bluebox">
-                    <p>test<br>testswswswsswsw<br>test<br></p>
-                </div>
-            </aside> -->
-
             <aside id="sidebox">
                 <div class="bluebox">
                     <div class="title_box">Insight Exchange Network</div>
@@ -118,6 +124,20 @@
                     <button>Get More Insight</button>
                 </div>
             </aside>
+        </div>
+    </section>
+
+    <section id="mobile_footer">
+        <div class="container">
+            <div class="mobile_footer-navlinks">
+                <ul>
+                    <li><button><a href="index.html">Home</a></button></li>
+                    <li><button><a href="#">About Us</a></button></li>
+                    <li><button><a href="#">Services</a></button></li>
+                    <li><button><a href="#">Events</a></button></li>
+                    <li><button><a href="#">Contact Us</a></button></li>
+                </ul>
+            </div>
         </div>
     </section>
 
